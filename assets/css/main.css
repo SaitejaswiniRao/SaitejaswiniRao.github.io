@@ -739,7 +739,7 @@ section,
   text-align: justify;
 }
 
-.download-btn {
+.view-btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #b8a07e;
@@ -752,7 +752,7 @@ section,
 
 
 
-.download-btn:hover {
+.view-btn:hover {
   background-color: #e8d2b4;
 }
 /*--------------------------------------------------------------
