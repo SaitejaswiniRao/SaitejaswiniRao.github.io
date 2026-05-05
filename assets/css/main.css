@@ -1052,6 +1052,10 @@ section,
   background-color: #3a74d3;  /* Darker blue */
 }
 
+portfolio .filter-patent .portfolio-padding {
+  background-color: #20d474;  /* Darker blue */
+}
+
 #portfolio .filter-internship .portfolio-padding {
   background-color: #2c4b87;  /* Even darker blue */
 }
@@ -1111,7 +1115,87 @@ section,
 }
 
 
+/* ------------------------------------
+          ACHIEVEMENTS Section 
+---------------------------------------*/
+#achievements {
+  background: #ffffff;
+  padding: 80px 0;
+}
 
+/* Slider container */
+.achievements-slider {
+  position: relative;
+  width: 100%;
+}
+
+/* IMPORTANT: allow partial slides */
+.achievements-slider .swiper {
+  overflow: visible;
+  padding: 40px 0;
+}
+
+/* Wrapper alignment */
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Slides */
+.swiper-slide {
+  width: 340px; /* controls visible count */
+  display: flex;
+  justify-content: center;
+}
+
+/* Card */
+.achievement-card {
+  width: 320px;
+  height: 600px;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LinkedIn iframe wrapper */
+.linkedin-embed {
+  width: 100%;
+  height: 100%;
+}
+
+/* FIX iframe sizing */
+.linkedin-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Navigation */
+.achievement-nav {
+  color: #b8a07e;
+}
+
+.achievement-nav::after {
+  font-size: 24px;
+}
+
+/* Pagination */
+.swiper-pagination {
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #ccc;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b8a07e;
+}
 
 /*--------------------------------------------------------------
 # Pricing Section
