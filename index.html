@@ -52,8 +52,8 @@
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Projects</a></li>
+          <li><a href="#achievements">LinkedIn</a></li>
           <li><a href="#portfolio">Experience</a></li>
-          <!-- <li><a href="#achievement">Achievement</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -487,97 +487,98 @@
     </section><!-- /Services Section -->
 
 
-    <section id="achievements">
-      <div class="container">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-        <div class="section-title text-center">
-          <h2>My LinkedIn Posts</h2>
-        </div>
+<section id="achievements">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>My LinkedIn Posts</h2>
+      <p>A brief about my experiences</p>
+    </div><!-- End Section Title -->
 
-        <div class="achievements-slider swiper">
-          <div class="swiper-wrapper">
-
-            <!-- LinkedIn Post 1 -->
-            <div class="swiper-slide">
-              <div class="achievement-card">
-
-                <div class="linkedin-embed">
-                  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7410360917840023552?collapsed=1" height="627" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-
+    <div class="achievements-slider">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="achievement-card">
+              <div class="linkedin-embed">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7413977412683722753?collapsed=1"></iframe>
               </div>
             </div>
-
-            <!-- LinkedIn Post 2 -->
-            <div class="swiper-slide">
-              <div class="achievement-card">
-
-                <div class="linkedin-embed">
-                  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7263237439622668288?collapsed=1" height="500" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-
-              </div>
-            </div>
-
-            <!-- LinkedIn Post 2 -->
-            <div class="swiper-slide">
-              <div class="achievement-card">
-
-                <div class="linkedin-embed">
-                  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7263237439622668288?collapsed=1" height="500" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div>
-
-              </div>
-            </div>
-
           </div>
 
-          <!-- Navigation -->
-          <div class="swiper-button-prev achievement-nav"></div>
-          <div class="swiper-button-next achievement-nav"></div>
+          <div class="swiper-slide">
+            <div class="achievement-card">
+              <div class="linkedin-embed">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7410360917840023552?collapsed=1"></iframe>
+              </div>
+            </div>
+          </div>
 
-          <!-- Pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-slide">
+            <div class="achievement-card">
+              <div class="linkedin-embed">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7366730057286955008?collapsed=1"></iframe>
+              </div>
+            </div>
+          </div>
 
+          <div class="swiper-slide">
+            <div class="achievement-card">
+              <div class="linkedin-embed">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7263237439622668288?collapsed=1"></iframe>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="achievement-card">
+              <div class="linkedin-embed">
+                <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7142204402647433216?collapsed=1"></iframe>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="swiper-button-prev achievement-nav"></div>
+        <div class="swiper-button-next achievement-nav"></div>
+
+        <div class="swiper-pagination"></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <script>
-      var swiper = new Swiper(".achievements-slider", {
-        slidesPerView: "auto",   // key for partial slide
-        spaceBetween: 20,
-        loop: true,
-        centeredSlides: false,
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        autoplay: {
-          delay: 3000,   // 3 seconds
-          disableOnInteraction: false,
-        },
-
-        speed: 800,
-
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        breakpoints: {
-          768: {
-            slidesPerView: "auto",
-          },
-          1024: {
-            slidesPerView: "auto",
-          }
-        }
-      });
-      </script>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1, // Default for mobile
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 5000, // 5 seconds
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // Responsive breakpoints
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3, // Show 3 posts on desktop
+      },
+    },
+  });
+</script><!-- /Services Section -->
 
 
     <!-- Portfolio Section -->

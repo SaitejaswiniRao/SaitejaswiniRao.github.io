@@ -1114,51 +1114,41 @@ portfolio .filter-patent .portfolio-padding {
   transform: none; /* Remove zoom effect */
 }
 
-
 /* ------------------------------------
-          ACHIEVEMENTS Section 
+# LinkedIn Post's Section 
 ---------------------------------------*/
 #achievements {
-  background: #ffffff;
+  background: #ffffff; 
   padding: 80px 0;
 }
 
-/* Slider container */
 .achievements-slider {
   position: relative;
-  width: 100%;
+  width: 90%; /* Increased container width */
+  margin: 0 auto;
 }
 
-/* IMPORTANT: allow partial slides */
 .achievements-slider .swiper {
-  overflow: visible;
-  padding: 40px 0;
-}
-
-/* Wrapper alignment */
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
+  padding: 40px 10px;
 }
 
 /* Slides */
 .swiper-slide {
-  width: 340px; /* controls visible count */
   display: flex;
   justify-content: center;
+  transition: transform 0.3s ease;
 }
 
-/* Card */
+/* Card - Increased Size & Improved Look */
 .achievement-card {
-  width: 320px;
-  height: 600px;
+  width: 100%;
+  max-width: 400px; /* Increased width */
+  height: 550px;    /* Increased height */
   background: #fff;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
 }
 
 /* LinkedIn iframe wrapper */
@@ -1167,34 +1157,42 @@ portfolio .filter-patent .portfolio-padding {
   height: 100%;
 }
 
-/* FIX iframe sizing */
 .linkedin-embed iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
 
-/* Navigation */
+/* Navigation Arrows */
 .achievement-nav {
   color: #b8a07e;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .achievement-nav::after {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /* Pagination */
 .swiper-pagination {
-  margin-top: 20px;
+  position: relative;
+  margin-top: 30px;
 }
 
 .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
   background: #ccc;
   opacity: 1;
+  margin: 0 5px !important;
 }
 
 .swiper-pagination-bullet-active {
   background: #b8a07e;
+  width: 25px; /* Decorative elongated active bullet */
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
