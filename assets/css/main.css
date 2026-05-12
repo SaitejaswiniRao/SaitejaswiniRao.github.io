@@ -1124,7 +1124,7 @@ portfolio .filter-patent .portfolio-padding {
 
 .achievements-slider {
   position: relative;
-  width: 90%; /* Increased container width */
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -1139,11 +1139,11 @@ portfolio .filter-patent .portfolio-padding {
   transition: transform 0.3s ease;
 }
 
-/* Card - Increased Size & Improved Look */
+/* Card - Dimensions preserved as requested */
 .achievement-card {
   width: 100%;
-  max-width: 400px; /* Increased width */
-  height: 550px;    /* Increased height */
+  max-width: 400px; 
+  height: 550px;    
   background: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -1163,183 +1163,108 @@ portfolio .filter-patent .portfolio-padding {
   border: none;
 }
 
-/* Navigation Arrows */
+/* --- ARROW CUSTOMIZATION --- */
+
+/* 1. Change Arrow Color & Size of Container */
 .achievement-nav {
-  color: #b8a07e;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #0077b5; /* LinkedIn Blue or any color you prefer */
+  width: 30px;
+  height: 30px;
 }
 
+/* 2. Decrease the actual Arrow Icon size */
 .achievement-nav::after {
-  font-size: 20px;
+  font-size: 18px !important; /* Smaller arrow size */
   font-weight: bold;
 }
 
-/* Pagination */
-.swiper-pagination {
-  position: relative;
-  margin-top: 30px;
+/* Optional: Add a hover effect for a premium feel */
+.achievement-nav:hover {
+  color: #004182; 
+  transform: scale(1.1);
 }
 
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  background: #ccc;
-  opacity: 1;
-  margin: 0 5px !important;
-}
-
+/* --- PAGINATION CUSTOMIZATION --- */
 .swiper-pagination-bullet-active {
-  background: #b8a07e;
-  width: 25px; /* Decorative elongated active bullet */
-  border-radius: 5px;
+  background: #0077b5;
 }
 
 /*--------------------------------------------------------------
-# Pricing Section
+# Pricing Section (Slider Customization)
 --------------------------------------------------------------*/
-.pricing .pricing-item {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
-  padding: 40px 40px;
-  height: 100%;
-  border-radius: 15px;
-}
-
-.pricing h3 {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 20px;
-  color: #333333;
-}
-
-.pricing h4 {
-  color: #222222;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: var(--heading-font);
-  margin-bottom: 0;
-}
-
-.pricing h4 sup {
-  font-size: 12px;
-}
-
-.pricing h4 span {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-  font-size: 12px;
-  font-weight: 100;
-}
-
-.pricing .description {
-  font-size: 14px;
-  margin: 0;
-}
-
-.pricing .description p {
-  margin: 0; /* Remove margin from all paragraph elements */
-  padding: 0; /* Optional: remove padding */
-}
-
-
-.pricing .cta-btn {
-  border: 1px solid var(--default-color);
-  color: var(--default-color);
-  display: block;
-  text-align: center;
-  padding: 10px 35px;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: var(--heading-font);
-  transition: 0.3s;
-  margin-top: 20px;
-  margin-bottom: 6px;
-}
-
-.pricing .cta-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
-}
-
-.pricing ul {
-  padding: 0;
-  list-style: none;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  text-align: left;
-  line-height: 20px;
-}
-
-.pricing ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-.pricing ul li:last-child {
-  padding-bottom: 0;
-}
-
-.pricing ul i {
-  color: #191a1a;
-  font-size: 24px;
-  padding-right: 3px;
-}
-
-.pricing ul .na {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na i {
-  color: color-mix(in srgb, var(--default-color), transparent 60%);
-}
-
-.pricing ul .na span {
-  text-decoration: line-through;
-}
-
-.pricing .featured {
+.pricing .education-slider {
+  padding: 20px 40px 60px 40px; /* Added side padding for arrows */
   position: relative;
 }
 
-.pricing .featured .popular {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  padding: 4px 15px 6px 15px;
+.pricing .pricing-item {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
+  padding: 30px;
+  height: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing .education-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  margin-top: 15px;
+}
+
+.pricing p {
   margin: 0;
-  border-radius: 5px;
   font-size: 14px;
-  font-weight: 500;
 }
 
-.pricing .featured .cta-btn {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border-color: var(--accent-color);
+.pricing .mentors {
+  margin-top: 15px;
+  font-size: 13px;
 }
 
-@media (max-width: 992px) {
-  .pricing .box {
-    max-width: 60%;
-    margin: 0 auto 30px auto;
-  }
+/* Arrow Size & Color Customization */
+.pricing .swiper-button-prev,
+.pricing .swiper-button-next {
+  color: #444444; /* CHANGE COLOR HERE */
+  transition: 0.3s;
 }
 
-@media (max-width: 767px) {
-  .pricing .box {
-    max-width: 80%;
-    margin: 0 auto 30px auto;
-  }
+.pricing .swiper-button-prev:after,
+.pricing .swiper-button-next:after {
+  font-size: 18px; /* DECREASED SIZE HERE */
+  font-weight: bold;
 }
 
-@media (max-width: 420px) {
-  .pricing .box {
-    max-width: 100%;
-    margin: 0 auto 30px auto;
-  }
+.pricing .swiper-button-prev:hover,
+.pricing .swiper-button-next:hover {
+  color: var(--accent-color); /* Changes to accent color on hover */
+}
+
+/* Pagination Color */
+.pricing .swiper-pagination-bullet-active {
+  background-color: #444444;
+}
+
+/* Fix for list alignment */
+.pricing ul {
+  padding: 0;
+  list-style: none;
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+.pricing ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.pricing ul i {
+  color: var(--accent-color);
+  font-size: 20px;
+  margin-right: 8px;
 }
 
 /*--------------------------------------------------------------
