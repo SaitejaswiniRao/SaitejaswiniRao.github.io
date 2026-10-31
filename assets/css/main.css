@@ -1037,27 +1037,27 @@ section,
 
 /* Background colors for each filter category */
 #portfolio .filter-course .portfolio-padding {
-  background-color: #b0c7e1;  /* Light blue */
+  background-color: #7FA6C9;  /* Soft Steel Blue */
 }
 
 #portfolio .filter-event .portfolio-padding {
-  background-color: #7da3b7;  /* Medium blue */
+  background-color: #6794BE;  /* Muted Blue */
 }
 
 #portfolio .filter-certification .portfolio-padding {
-  background-color: #508bf8;  /* Standard blue (unchanged) */
+  background-color: #4F81B5;  /* Classic Blue */
 }
 
 #portfolio .filter-publication .portfolio-padding {
-  background-color: #3a74d3;  /* Darker blue */
+  background-color: #3D6FA3;  /* Professional Blue */
 }
 
-portfolio .filter-patent .portfolio-padding {
-  background-color: #20d474;  /* Darker blue */
+#portfolio .filter-patent .portfolio-padding {
+  background-color: #315F91;  /* Corporate Blue */
 }
 
 #portfolio .filter-internship .portfolio-padding {
-  background-color: #2c4b87;  /* Even darker blue */
+  background-color: #274D78;  /* Deep Slate Blue */
 }
 
 
@@ -1796,5 +1796,50 @@ portfolio .filter-patent .portfolio-padding {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
+}
+
+
+
+
+/* Vertical Video Gallery */
+#Fabrication .video-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#Fabrication .video-box {
+  width: 100%;
+  max-width: 700px;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#Fabrication .video-box video {
+  display: block;
+  width: 100%;
+  max-height: 500px;
+  border-radius: 8px;
+  background: #000000;
+}
+
+#Fabrication .video-box p {
+  margin: 12px 0 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 576px) {
+  #Fabrication .video-box {
+    padding: 10px;
+  }
+
+  #Fabrication .video-box video {
+    max-height: 350px;
+  }
 }
 
